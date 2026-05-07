@@ -114,6 +114,17 @@
             justify-content: center;
             text-align: center;
         }
+
+        .auth-aux-text {
+            font-size: 0.75rem !important;
+            white-space: nowrap;
+        }
+
+        @media (max-width: 400px) {
+            .auth-card {
+                padding: 2rem;
+            }
+        }
     </style>
 </head>
 
@@ -137,15 +148,15 @@
                     <input type="email" class="custom-input" placeholder="Enter your email" required>
                 </div>
                 <div class="mb-1">
-                    <div class="d-flex justify-content-between align-items-center mb-2">
-                        <label class="form-label mb-0 fw-semibold small">Password</label>
-                        <a href="#" class="text-primary small fw-semibold">Forgot Password?</a>
-                    </div>
+                    <label class="form-label d-block mb-2 fw-semibold small">Password</label>
                     <input type="password" class="custom-input" placeholder="Enter your password" required>
                 </div>
-                <div class="d-flex align-items-center gap-3 mb-4">
-                    <input type="checkbox" id="remember" style="width: 18px; height: 18px; cursor: pointer;">
-                    <label for="remember" class="small text-secondary" style="cursor: pointer;">Remember me</label>
+                <div class="d-flex justify-content-between align-items-center mb-4 gap-2">
+                    <div class="d-flex align-items-center gap-1">
+                        <input type="checkbox" id="remember" style="width: 14px; height: 14px; cursor: pointer;">
+                        <label for="remember" class="text-secondary auth-aux-text" style="cursor: pointer;">Remember me</label>
+                    </div>
+                    <a href="#" class="text-primary fw-semibold auth-aux-text">Forgot Password?</a>
                 </div>
                 <button type="submit" class="btn btn-primary auth-btn">Sign In</button>
                 <div class="divider">or continue with</div>

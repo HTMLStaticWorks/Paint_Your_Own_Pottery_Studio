@@ -61,4 +61,22 @@ document.addEventListener('DOMContentLoaded', () => {
             imageObserver.observe(img);
         }
     });
+
+    // Active Menu Highlighting
+    const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+    const allLinks = document.querySelectorAll('.nav-link, .dropdown-item');
+
+    allLinks.forEach(link => {
+        const href = link.getAttribute('href');
+        if (href === currentPath) {
+            link.classList.add('active');
+            
+            // If it's a dropdown item, also highlight the parent nav-link
+            const parentDropdown = link.closest('.dropdown');
+            if (parentDropdown) {
+                const parentLink = parentDropdown.querySelector('.nav-link');
+                if (parentLink) parentLink.classList.add('active');
+            }
+        }
+    });
 });

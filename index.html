@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pottery Haven | Paint-Your-Own Pottery Studio</title>
+    <meta name="description" content="Welcome to Pottery Haven, your local creative studio for walk-in painting, pottery sessions, and unforgettable parties.">
+    
+    <!-- Bootstrap Grid Only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap-grid.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">`n</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-palette"></i> Pottery Haven
+            </a>
+            
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="index.html" class="nav-link active">Home <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="index.html" class="dropdown-item">Home Style 1</a>
+                        <a href="home-2.html" class="dropdown-item">Home Style 2</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="studio.html" class="nav-link">Studio <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="studio.html" class="dropdown-item">The Studio</a>
+                        <a href="glaze-gallery.html" class="dropdown-item">Glaze Gallery</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="pricing.html" class="nav-link">Services <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="pricing.html" class="dropdown-item">Walk-in Pricing</a>
+                        <a href="parties.html" class="dropdown-item">Party Packages</a>
+                        </div>
+                </li>
+                <li><a href="reservation.html" class="nav-link">Bookings</a></li>
+                <li class="dropdown">
+                    <a href="contact.html" class="nav-link">Contact <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="contact.html" class="dropdown-item">Contact Us</a>
+                        <a href="about.html" class="dropdown-item">About Us</a>
+                    </div>
+                </li>
+            
+                <div class="mobile-nav-actions">
+                    <div class="action-group">
+                        <button class="rtl-toggle" title="Toggle RTL">RTL</button>
+                        <button class="theme-toggle">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </div>
+                    <a href="signup.html" class="btn btn-primary">Sign Up</a>
+                </div></ul>
+
+            <div class="nav-actions">
+                <button id="rtl-toggle" class="rtl-toggle" title="Toggle RTL">RTL</button>
+                <button id="theme-toggle" class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="signup.html" class="btn btn-primary">Sign Up</a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+    <div class="mobile-overlay"></div>
+
+    <!-- Hero Section -->
+    <section class="hero section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 hero-content">
+                    <h1 class="hero-title">Unleash Your <span style="color: var(--primary);">Creativity</span> on Canvas of Clay</h1>
+                    <p class="hero-subtitle">The ultimate paint-your-own pottery experience. From beginners to masters, everyone finds their spark here.</p>
+                    <div class="d-flex gap-3">
+                        <a href="reservation.html" class="btn btn-primary">Book a Table</a>
+                        <a href="glaze-gallery.html" class="btn btn-outline">Explore Glazes</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image-wrapper" style="position: relative; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow);">
+                        <img src="assets/images/hero.png" alt="Pottery Studio Interior" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section" style="background: var(--surface);">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2>How It Works</h2>
+                    <p class="text-secondary">Three simple steps to your masterpiece</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="icon-box mb-3" style="font-size: 2.5rem; color: var(--accent);">
+                            <i class="fas fa-box-open"></i>
+                        </div>
+                        <h3>1. Pick Your Piece</h3>
+                        <p>Choose from over 200 different bisque items, from mugs to intricate figurines.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="icon-box mb-3" style="font-size: 2.5rem; color: var(--secondary);">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3>2. Paint & Design</h3>
+                        <p>Use our professional glazes and tools to bring your unique vision to life.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="icon-box mb-3" style="font-size: 2.5rem; color: var(--primary);">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                        <h3>3. Glaze & Fire</h3>
+                        <p>We'll dip your piece in clear glaze and fire it in our kilns. Ready in 7 days!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Glaze Gallery Preview -->
+    <section class="section" id="glaze-preview" style="background: var(--surface);">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="assets/images/glaze-gallery.png" alt="Glazes" class="img-fluid rounded-4 shadow-lg">
+                </div>
+                <div class="col-lg-6 ps-lg-5">
+                    <h2>Vibrant Glazes</h2>
+                    <p class="text-secondary mb-4">Discover our collection of over 80 professional glazes. Whether you want a glossy shine or a rustic matte finish, we have the perfect color for your piece.</p>
+                    <a href="glaze-gallery.html" class="btn btn-primary">Browse Glaze Gallery</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Preview -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2>The Studio Showcase</h2>
+                <p class="text-secondary">Inspiration from our creative community.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="portfolio-item rounded-4 overflow-hidden shadow hover-lift">
+                        <img src="assets/images/hero.png" alt="Showcase" class="img-fluid w-100">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="portfolio-item rounded-4 overflow-hidden shadow hover-lift">
+                        <img src="assets/images/party.png" alt="Showcase" class="img-fluid w-100">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="portfolio-item rounded-4 overflow-hidden shadow hover-lift">
+                        <img src="assets/images/glaze-gallery.png" alt="Showcase" class="img-fluid w-100">
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="portfolio.html" class="btn btn-outline">View Full Showcase</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section" style="background: var(--surface);">
+        <div class="container">
+            <div class="glass p-5 rounded-4 text-center">
+                <h2 class="mb-3">Planning a Party?</h2>
+                <p class="mb-4">We host birthdays, bachelorette parties, and corporate team building events!</p>
+                <a href="parties.html" class="btn btn-primary">View Party Packages</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section" id="faq">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2>Frequently Asked Questions</h2>
+                <p class="text-secondary">Everything you need to know before your visit.</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion">
+                        <div class="card mb-3 border shadow-sm">
+                            <div class="p-4">
+                                <h5 class="mb-2">Do I need to make a reservation?</h5>
+                                <p class="text-secondary mb-0 small">Walk-ins are always welcome! However, for groups of 6 or more, or if you're visiting on a weekend, we recommend booking a table to ensure we have space for you.</p>
+                            </div>
+                        </div>
+                        <div class="card mb-3 border shadow-sm">
+                            <div class="p-4">
+                                <h5 class="mb-2">How long does it take to get my pottery back?</h5>
+                                <p class="text-secondary mb-0 small">After you finish painting, your piece needs to be glazed and fired in our kiln. This process takes about 7 days. We'll send you a text when it's ready for pickup!</p>
+                            </div>
+                        </div>
+                        <div class="card mb-3 border shadow-sm">
+                            <div class="p-4">
+                                <h5 class="mb-2">Is pottery painting suitable for children?</h5>
+                                <p class="text-secondary mb-0 small">Absolutely! We have a wide variety of pieces perfect for kids, and our glazes are non-toxic and wash off clothes easily. We're a family-friendly studio for all ages.</p>
+                            </div>
+                        </div>
+                        <div class="card mb-3 border shadow-sm">
+                            <div class="p-4">
+                                <h5 class="mb-2">What is the cost?</h5>
+                                <p class="text-secondary mb-0 small">Our pricing consists of a studio fee (covers glazes and firing) plus the cost of the ceramic piece you choose. Studio fees are $10 for adults and $8 for children.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="index.html" class="logo mb-4 d-inline-flex"><i class="fas fa-palette"></i> Pottery Haven</a>
+                    <p class="text-secondary mb-4">A creative space for everyone to explore their artistic side through pottery painting.</p>
+                    <div class="social-links d-flex gap-3">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="studio.html">The Studio</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="parties.html">Parties</a></li>
+                        <li><a href="reservation.html">Book Now</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="firing-schedule.html">Firing Schedule</a></li>
+                        <li><a href="glaze-gallery.html">Glaze Gallery</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Newsletter</h4>
+                    <p class="text-secondary mb-3">Get creative tips and studio updates.</p>
+                    <div class="d-flex gap-2">
+                        <input type="email" placeholder="Your email" class="form-control" style="border-radius: var(--radius-sm); border: 1px solid var(--border); padding: 0.5rem 1rem; width: 100%;">
+                        <button class="btn btn-primary"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Pottery Haven Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="assets/js/theme-toggle.js"></script>
+    <script src="assets/js/rtl.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,33 @@
+/* Dark Mode Specific Overrides */
+[data-theme="dark"] {
+    --bg: #0F172A;
+    --surface: #162032;
+    --accent: #FBBF24;
+    --text-primary: #E5E7EB;
+    --text-secondary: #9CA3AF;
+    --border: #1E293B;
+    --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+    --glass-bg: rgba(22, 32, 50, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .card {
+    background: var(--surface);
+    border-color: var(--border);
+}
+
+[data-theme="dark"] .navbar {
+    background: rgba(15, 23, 42, 0.8);
+}
+
+[data-theme="dark"] input, 
+[data-theme="dark"] select, 
+[data-theme="dark"] textarea {
+    background: #1e293b;
+    color: white;
+    border-color: #334155 !important;
+}
+
+[data-theme="dark"] .footer {
+    background: #0f172a;
+}

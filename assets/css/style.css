@@ -616,7 +616,7 @@ img {
 }
 
 /* Responsive */
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
     .nav-actions {
         display: none !important;
     }
@@ -709,7 +709,7 @@ img {
     }
 }
 
-@media (min-width: 993px) {
+@media (min-width: 1025px) {
     .mobile-nav-actions {
         display: none;
     }

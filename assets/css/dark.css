@@ -9,6 +9,12 @@
     --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
     --glass-bg: rgba(22, 32, 50, 0.7);
     --glass-border: rgba(255, 255, 255, 0.1);
+
+    /* Offer Cards - Dark Mode */
+    --offer-family-bg: linear-gradient(135deg, #451a03, #78350f);
+    --offer-student-bg: linear-gradient(135deg, #1e3a8a, #1e40af);
+    --offer-late-bg: linear-gradient(135deg, #701a75, #86198f);
+    --offer-text: #f3f4f6;
 }
 
 [data-theme="dark"] .card {

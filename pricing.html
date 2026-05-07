@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" data-theme="light">
 
 <head>
@@ -9,7 +9,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/dark.css">
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <style>
+        .price-list-item {
+            transition: var(--transition);
+            border-radius: var(--radius-md);
+        }
+        .price-list-item:hover {
+            background: var(--surface);
+            transform: translateX(10px);
+        }
+        .price-tag {
+            background: var(--primary);
+            color: white;
+            padding: 0.25rem 1rem;
+            border-radius: 20px;
+            font-weight: 700;
+        }
+        .offer-card-family { background: var(--offer-family-bg); color: var(--offer-text); }
+        .offer-card-student { background: var(--offer-student-bg); color: var(--offer-text); }
+        .offer-card-late { background: var(--offer-late-bg); color: var(--offer-text); }
+    </style>
 </head>
 
 <body>
@@ -77,65 +98,79 @@
     </nav>
     <div class="mobile-overlay"></div>
 
-    <header class="section text-center" style="background: var(--surface);">
+    <header class="section text-center" style="background: var(--surface); padding: 5rem 0;">
         <div class="container">
-            <h1>Simple & Transparent Pricing</h1>
-            <p class="text-secondary">No hidden fees. Just creativity.</p>
+            <h1 class="display-4 fw-bold">Simple & Transparent Pricing</h1>
+            <p class="lead text-secondary mx-auto" style="max-width: 600px;">No hidden fees. Our pricing is split into a flat studio fee and the cost of your chosen ceramic piece.</p>
         </div>
     </header>
 
     <section class="section">
         <div class="container">
-            <div class="row g-4 justify-content-center">
-                <div class="col-lg-5 col-md-6 d-flex">
-                    <div class="card w-100 p-4">
-                        <h3 class="mb-3">Studio Fee</h3>
-                        <p class="text-secondary mb-4">Covers glazes, supplies, studio time, and firing.</p>
-                        <ul class="list-unstyled mb-4">
-                            <li class="d-flex justify-content-between border-bottom py-3">
-                                <span>Adults</span>
-                                <span class="fw-bold">$10.00</span>
-                            </li>
-                            <li class="d-flex justify-content-between border-bottom py-3">
-                                <span>Children (under 12)</span>
-                                <span class="fw-bold">$7.00</span>
-                            </li>
-                            <li class="d-flex justify-content-between py-3">
-                                <span>Group Rate (6+)</span>
-                                <span class="fw-bold">$8.00 per person</span>
-                            </li>
-                        </ul>
-                        <div class="glass p-3 rounded-3 mt-auto">
-                            <small class="text-secondary"><i class="fas fa-info-circle me-1"></i> Plus the cost of the
-                                pottery piece you choose.</small>
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center gap-3 mb-4">
+                        <div class="icon-box shadow-sm" style="background: var(--primary); color: white; width: 60px; height: 60px; border-radius: 15px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <div>
+                            <h2 class="mb-0">Studio Fee</h2>
+                            <p class="text-secondary mb-0">Includes all-day studio time, glazes, and firing.</p>
                         </div>
                     </div>
+                    <div class="price-list">
+                        <div class="price-list-item d-flex justify-content-between align-items-center p-3 border-bottom">
+                            <div class="d-flex align-items-center gap-3">
+                                <i class="fas fa-user text-primary"></i>
+                                <span class="fw-semibold">Adults</span>
+                            </div>
+                            <span class="price-tag">$10.00</span>
+                        </div>
+                        <div class="price-list-item d-flex justify-content-between align-items-center p-3 border-bottom">
+                            <div class="d-flex align-items-center gap-3">
+                                <i class="fas fa-child text-primary"></i>
+                                <span class="fw-semibold">Children (under 12)</span>
+                            </div>
+                            <span class="price-tag">$7.00</span>
+                        </div>
+                        <div class="price-list-item d-flex justify-content-between align-items-center p-3 border-bottom">
+                            <div class="d-flex align-items-center gap-3">
+                                <i class="fas fa-users text-primary"></i>
+                                <span class="fw-semibold">Group Rate (6+)</span>
+                            </div>
+                            <span class="price-tag">$8.00 <small>/ person</small></span>
+                        </div>
+                    </div>
+                    <div class="alert mt-4 p-3 rounded-4" style="background: var(--surface); border: 1px dashed var(--border);">
+                        <p class="mb-0 small text-secondary"><i class="fas fa-info-circle me-2"></i> Our studio fee covers the professional glazing and kiln firing process, which takes approximately 7 days.</p>
+                    </div>
                 </div>
-                <div class="col-lg-5 col-md-6 d-flex">
-                    <div class="card w-100 p-4">
-                        <h3 class="mb-3">Pottery Pieces</h3>
-                        <p class="text-secondary mb-4">A wide range of items for every budget.</p>
-                        <ul class="list-unstyled mb-4">
-                            <li class="d-flex justify-content-between border-bottom py-3">
-                                <span>Mugs & Bowls</span>
-                                <span class="fw-bold">$15 - $25</span>
-                            </li>
-                            <li class="d-flex justify-content-between border-bottom py-3">
-                                <span>Plates & Platters</span>
-                                <span class="fw-bold">$20 - $55</span>
-                            </li>
-                            <li class="d-flex justify-content-between border-bottom py-3">
-                                <span>Figurines & Decor</span>
-                                <span class="fw-bold">$12 - $40</span>
-                            </li>
-                            <li class="d-flex justify-content-between py-3">
-                                <span>Large Specialized Items</span>
-                                <span class="fw-bold">$60+</span>
-                            </li>
-                        </ul>
-                        <div class="glass p-3 rounded-3 mt-auto">
-                            <small class="text-secondary"><i class="fas fa-shopping-bag me-1"></i> Selection varies
-                                weekly based on kiln arrivals.</small>
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center gap-3 mb-4">
+                        <div class="icon-box shadow-sm" style="background: var(--secondary); color: white; width: 60px; height: 60px; border-radius: 15px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">
+                            <i class="fas fa-mug-hot"></i>
+                        </div>
+                        <div>
+                            <h2 class="mb-0">Pottery Pieces</h2>
+                            <p class="text-secondary mb-0">Prices vary based on the item size and complexity.</p>
+                        </div>
+                    </div>
+                    <div class="price-list">
+                        <div class="price-list-item d-flex justify-content-between align-items-center p-3 border-bottom">
+                            <span class="fw-semibold">Mugs, Bowls & Kitchenware</span>
+                            <span class="fw-bold text-primary">$15 - $35</span>
+                        </div>
+                        <div class="price-list-item d-flex justify-content-between align-items-center p-3 border-bottom">
+                            <span class="fw-semibold">Plates & Large Platters</span>
+                            <span class="fw-bold text-primary">$20 - $65</span>
+                        </div>
+                        <div class="price-list-item d-flex justify-content-between align-items-center p-3 border-bottom">
+                            <span class="fw-semibold">Figurines & Kids' Favorites</span>
+                            <span class="fw-bold text-primary">$12 - $30</span>
+                        </div>
+                        <div class="price-list-item d-flex justify-content-between align-items-center p-3 border-bottom">
+                            <span class="fw-semibold">Garden Decor & Vases</span>
+                            <span class="fw-bold text-primary">$25 - $75</span>
                         </div>
                     </div>
                 </div>
@@ -143,29 +178,41 @@
         </div>
     </section>
 
-    <section class="section bg-light" style="background: var(--surface);">
+    <section class="section" style="background: var(--surface);">
         <div class="container">
             <h2 class="text-center mb-5">Special Offers</h2>
             <div class="row g-4">
                 <div class="col-md-4">
-                    <div class="card text-center p-4 border-0 shadow-sm"
-                        style="background: linear-gradient(135deg, #fef3c7, #fde68a);">
-                        <h4 class="mb-2">Family Sunday</h4>
-                        <p class="small text-secondary">Half-price studio fees for families of 4 or more.</p>
+                    <div class="card text-center p-0 overflow-hidden border-0 shadow-sm offer-card-family h-100">
+                        <div style="height: 160px; overflow: hidden;">
+                            <img src="assets/images/offer-family.png" alt="Family Sunday" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="p-4">
+                            <h4 class="mb-2">Family Sunday</h4>
+                            <p class="small opacity-75 mb-0">Half-price studio fees for families of 4 or more every Sunday.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card text-center p-4 border-0 shadow-sm"
-                        style="background: linear-gradient(135deg, #dbeafe, #bfdbfe);">
-                        <h4 class="mb-2">Student Night</h4>
-                        <p class="small text-secondary">Every Wednesday, students paint for $5 studio fee.</p>
+                    <div class="card text-center p-0 overflow-hidden border-0 shadow-sm offer-card-student h-100">
+                        <div style="height: 160px; overflow: hidden;">
+                            <img src="assets/images/offer-student.png" alt="Student Night" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="p-4">
+                            <h4 class="mb-2">Student Night</h4>
+                            <p class="small opacity-75 mb-0">Every Wednesday, students paint for a flat $5 studio fee.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card text-center p-4 border-0 shadow-sm"
-                        style="background: linear-gradient(135deg, #fce7f3, #fbcfe8);">
-                        <h4 class="mb-2">Late Night Paint</h4>
-                        <p class="small text-secondary">First Friday of the month: Open night until 11:30 PM!</p>
+                    <div class="card text-center p-0 overflow-hidden border-0 shadow-sm offer-card-late h-100">
+                        <div style="height: 160px; overflow: hidden;">
+                            <img src="assets/images/offer-late.png" alt="Late Night Paint" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="p-4">
+                            <h4 class="mb-2">Late Night Paint</h4>
+                            <p class="small opacity-75 mb-0">First Friday of the month: Open late until 11:30 PM!</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -176,98 +223,18 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
-                    <img src="assets/images/party.png" alt="Parties" class="rounded-4 shadow-lg mb-4 mb-lg-0">
+                    <img src="assets/images/party-setup.png" alt="Parties" class="rounded-4 shadow-lg mb-4 mb-lg-0 w-100">
                 </div>
                 <div class="col-lg-6 ps-lg-5">
                     <h2>Party Packages</h2>
                     <p class="text-secondary mb-4">From birthdays to corporate events, we host them all. Our packages
                         include everything you need for a creative celebration.</p>
                     <ul class="list-unstyled mb-4">
-                        <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Private party area</li>
-                        <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Dedicated party assistant</li>
-                        <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> All supplies and firing included
-                        </li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Private party area for 2 hours</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Dedicated party assistant</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> All supplies, glazes and firing included</li>
                     </ul>
-                    <a href="parties.html" class="btn btn-primary">View Packages</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section" id="firing" style="background: var(--bg);">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="mb-2">Firing Schedule</h2>
-                <p class="text-secondary">Track your masterpieces from the kiln to your home.</p>
-            </div>
-
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="firing-card-container">
-                        <!-- Current Batch -->
-                        <div class="card p-4 mb-4 border-0 shadow-sm rounded-4 overflow-hidden position-relative"
-                            style="background: var(--surface);">
-                            <div class="position-absolute top-0 end-0 p-3">
-                                <span class="badge bg-warning text-dark px-3 py-2 rounded-pill fw-bold">Current
-                                    Batch</span>
-                            </div>
-                            <div class="row align-items-center">
-                                <div class="col-md-4 text-center text-md-start mb-4 mb-md-0">
-                                    <span class="text-secondary small d-block mb-1">Painted During</span>
-                                    <h4 class="mb-0">May 01 - May 03</h4>
-                                </div>
-                                <div class="col-md-4 text-center mb-4 mb-md-0">
-                                    <div class="d-flex align-items-center justify-content-center gap-3">
-                                        <div class="flex-grow-1 d-none d-lg-block"
-                                            style="height: 2px; background: linear-gradient(to right, transparent, var(--primary));">
-                                        </div>
-                                        <div class="icon-circle shadow-sm"
-                                            style="width: 50px; height: 50px; background: var(--primary); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                                            <i class="fas fa-fire-alt fa-lg"></i>
-                                        </div>
-                                        <div class="flex-grow-1 d-none d-lg-block"
-                                            style="height: 2px; background: linear-gradient(to left, transparent, var(--primary));">
-                                        </div>
-                                    </div>
-                                    <span class="badge bg-primary-subtle text-primary mt-2">In the Kiln</span>
-                                </div>
-                                <div class="col-md-4 text-center text-md-end">
-                                    <span class="text-secondary small d-block mb-1">Ready for Pickup</span>
-                                    <h4 class="mb-0 text-primary">May 10, 2026</h4>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Previous Batch -->
-                        <div class="card p-4 mb-4 border-0 shadow-sm rounded-4 opacity-75"
-                            style="background: var(--surface);">
-                            <div class="row align-items-center">
-                                <div class="col-md-4 text-center text-md-start mb-4 mb-md-0">
-                                    <span class="text-secondary small d-block mb-1">Painted During</span>
-                                    <h4 class="mb-0">April 24 - April 30</h4>
-                                </div>
-                                <div class="col-md-4 text-center mb-4 mb-md-0">
-                                    <div class="d-flex align-items-center justify-content-center gap-3">
-                                        <div class="icon-circle"
-                                            style="width: 50px; height: 50px; background: var(--border); color: var(--text-secondary); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                                            <i class="fas fa-check"></i>
-                                        </div>
-                                    </div>
-                                    <span class="badge bg-light text-secondary mt-2">Completed</span>
-                                </div>
-                                <div class="col-md-4 text-center text-md-end">
-                                    <span class="text-secondary small d-block mb-1">Ready for Pickup</span>
-                                    <h4 class="mb-0">Available Now</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="text-center mt-5">
-                        <a href="firing-schedule.html" class="btn btn-outline px-5">
-                            <i class="fas fa-calendar-alt me-2"></i> View Full Calendar
-                        </a>
-                    </div>
+                    <a href="parties.html" class="btn btn-primary px-4">View Packages</a>
                 </div>
             </div>
         </div>
@@ -329,7 +296,3 @@
 </body>
 
 </html>
-
-
-
-

@@ -384,6 +384,40 @@ img {
     font-size: 1.25rem;
 }
 
+/* Process Steps Section (Studio Page) */
+.process-steps {
+    display: grid;
+    gap: 1.5rem !important;
+}
+
+.process-step {
+    display: flex !important;
+    align-items: start !important;
+    gap: 1rem !important;
+}
+
+.process-number {
+    width: 55px !important;
+    height: 55px !important;
+    flex-shrink: 0 !important;
+    background: var(--primary) !important;
+    color: #ffffff !important;
+    font-size: 1.5rem !important;
+    font-weight: 700 !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+    transition: var(--transition) !important;
+}
+
+.process-step:hover .process-number {
+    transform: scale(1.08) !important;
+    background: var(--primary-hover) !important;
+    box-shadow: var(--shadow) !important;
+}
+
 /* Glassmorphism */
 .glass {
     background: var(--glass-bg);

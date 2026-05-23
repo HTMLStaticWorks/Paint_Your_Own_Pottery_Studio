@@ -777,6 +777,17 @@ a.text-primary:hover {
 
 /* Responsive */
 @media (max-width: 1024px) {
+    .navbar {
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    body:has(.navbar) {
+        padding-top: 80px;
+    }
+
     .nav-actions {
         display: none !important;
     }
